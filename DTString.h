@@ -13,6 +13,7 @@ protected:
 
     void init(const char* s);
     bool equal(const char* l, const char* r, int len) const;
+
 public:
     String();
     String(char c);
