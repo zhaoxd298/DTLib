@@ -15,6 +15,7 @@
 #include "StaticQueue.h"
 #include "LinkQueue.h"
 #include "DTString.h"
+#include "Sort.h"
 
 using namespace std;
 using namespace DTLib;
@@ -22,10 +23,15 @@ using namespace DTLib;
 
 int main()
 {
-    String s = "  hel  lo!      ";
+    StaticArray<double, 10> a; //= {4, 1, 8, 3, 10, 6, 5, 9, 7, 2};
+    for (int i=0; i<10; i++) {
+        a[i] = i;
+    }
+    Sort::insert(a, 0);
 
-    (s.trim())[0]='H';
-    cout << "[" << s.str() << "]" << endl;
+    for (int i=0; i<10; i++) {
+        cout << a[i] << endl;
+    }
 
     return 0;
 }

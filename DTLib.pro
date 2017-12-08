@@ -33,4 +33,5 @@ HEADERS += \
     Queue.h \
     StaticQueue.h \
     LinkQueue.h \
-    DTString.h
+    DTString.h \
+    Sort.h

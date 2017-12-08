@@ -18,6 +18,11 @@ public:
     T& operator[] (int i);
     T operator[] (int i) const;
 
+    T* array()
+    {
+        return m_array;
+    }
+
     virtual int length() const = 0;
 };
 
